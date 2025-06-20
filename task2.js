@@ -7,3 +7,5 @@ const showAllBtn = document.getElementById("showAll");
 const showDoneBtn = document.getElementById("showDone");
 const showTodoBtn = document.getElementById("showTodo");
 const errorMessage = document.getElementById("errorMessage");
+window.addEventListener("load", function () {
+  const savedTasks = JSON.parse(localStorage.getItem("tasks")) || [];
