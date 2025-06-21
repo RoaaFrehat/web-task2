@@ -57,4 +57,9 @@ const taskSpan = document.createElement("span");
   taskSpan.textContent = text;
  const taskCheckbox = document.createElement("input");
   taskCheckbox.type = "checkbox";
-  taskCheckbox.checked = done;}
+  taskCheckbox.checked = done;
+if (done) {
+    taskSpan.style.textDecoration = "line-through";
+    taskSpan.style.color = "red";
+    taskRow.classList.add("task-done");
+  }}
