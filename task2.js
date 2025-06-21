@@ -58,11 +58,13 @@ const taskSpan = document.createElement("span");
  const taskCheckbox = document.createElement("input");
   taskCheckbox.type = "checkbox";
   taskCheckbox.checked = done;
+
 if (done) {
     taskSpan.style.textDecoration = "line-through";
     taskSpan.style.color = "red";
     taskRow.classList.add("task-done");
   }
+  
  taskCheckbox.addEventListener("change", function () {
     if (taskCheckbox.checked) {
       taskSpan.style.textDecoration = "line-through";
@@ -85,4 +87,11 @@ editBtn.classList.add("icon-btn");
       showError("Task name cannot be empty!");
       return;
     }
-    
+   if (!validateTaskInput(newName)) {
+      return;
+    }
+
+    taskSpan.textContent = newName;
+    saveTasksToLocalStorage();
+    errorMessage.style.display = "none"; 
+  }); 
