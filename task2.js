@@ -26,3 +26,5 @@ addTaskBtn.addEventListener("click", function () {
   if (!validateTaskInput(taskText)) {
     return;
   }
+   const taskRow = createTaskRow(taskText, false);
+  tasksContainer.appendChild(taskRow);
