@@ -34,3 +34,8 @@ addTaskBtn.addEventListener("click", function () {
   updateNoTaskMessage();
   updateDeleteButtonsState();
 });
+function validateTaskInput(taskText) {
+  if (taskText === "") {
+    showError("Task cannot be empty!");
+    return false;
+  }
