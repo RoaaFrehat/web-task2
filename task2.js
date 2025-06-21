@@ -62,4 +62,16 @@ if (done) {
     taskSpan.style.textDecoration = "line-through";
     taskSpan.style.color = "red";
     taskRow.classList.add("task-done");
-  }}
+  }
+ taskCheckbox.addEventListener("change", function () {
+    if (taskCheckbox.checked) {
+      taskSpan.style.textDecoration = "line-through";
+      taskSpan.style.color = "red";
+      taskRow.classList.add("task-done");
+    } else {
+      taskSpan.style.textDecoration = "none";
+      taskSpan.style.color = "black";
+      taskRow.classList.remove("task-done");
+    }
+    saveTasksToLocalStorage();
+  });}
