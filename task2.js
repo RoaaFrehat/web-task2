@@ -131,4 +131,8 @@ function saveTasksToLocalStorage() {
 function updateNoTaskMessage() {
   if (tasksContainer.children.length === 0) {
     let noTaskMessage = document.getElementById("noTaskMessage");
+    if (!noTaskMessage) {
+      noTaskMessage = document.createElement("p");
+      noTaskMessage.id = "noTaskMessage";
+      
 
