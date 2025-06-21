@@ -95,3 +95,25 @@ editBtn.classList.add("icon-btn");
     saveTasksToLocalStorage();
     errorMessage.style.display = "none"; 
   }); 
+
+ const deleteBtn = document.createElement("button");
+  deleteBtn.classList.add("icon-btn");
+  deleteBtn.innerHTML = '<i class="fas fa-trash-alt"></i>';
+  deleteBtn.addEventListener("click", function () {
+    const confirmDelete = confirm("Are you sure you want to delete this task?");
+    if (confirmDelete) {
+      taskRow.remove();
+      saveTasksToLocalStorage();
+      updateNoTaskMessage();
+      updateDeleteButtonsState();
+    }
+  });
+
+   taskRow.appendChild(taskSpan);
+  taskRow.appendChild(taskCheckbox);
+  taskRow.appendChild(editBtn);
+  taskRow.appendChild(deleteBtn);
+
+  return taskRow;
+}
+
