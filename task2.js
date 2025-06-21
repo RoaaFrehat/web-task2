@@ -55,4 +55,6 @@ function createTaskRow(text, done) {
   taskRow.classList.add("task-row");
 const taskSpan = document.createElement("span");
   taskSpan.textContent = text;
-}
+ const taskCheckbox = document.createElement("input");
+  taskCheckbox.type = "checkbox";
+  taskCheckbox.checked = done;}
