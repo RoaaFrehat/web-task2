@@ -134,5 +134,8 @@ function updateNoTaskMessage() {
     if (!noTaskMessage) {
       noTaskMessage = document.createElement("p");
       noTaskMessage.id = "noTaskMessage";
-      
+       noTaskMessage.textContent = "No tasks";
+      tasksContainer.appendChild(noTaskMessage);
+    }
+    
 
