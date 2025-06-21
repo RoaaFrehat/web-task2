@@ -52,4 +52,7 @@ function validateTaskInput(taskText) {
 }
 function createTaskRow(text, done) {
   const taskRow = document.createElement("div");
-  taskRow.classList.add("task-row");}
+  taskRow.classList.add("task-row");
+const taskSpan = document.createElement("span");
+  taskSpan.textContent = text;
+}
