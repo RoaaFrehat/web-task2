@@ -76,4 +76,13 @@ if (done) {
     saveTasksToLocalStorage();
   });
 const editBtn = document.createElement("button");
-}
+editBtn.classList.add("icon-btn");
+  editBtn.innerHTML = '<i class="fas fa-edit"></i>';
+  editBtn.addEventListener("click", function () {
+    const newName = prompt("Enter new name:", taskSpan.textContent);
+
+    if (!newName) {
+      showError("Task name cannot be empty!");
+      return;
+    }
+    
