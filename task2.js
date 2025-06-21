@@ -50,3 +50,6 @@ function validateTaskInput(taskText) {
 
   return true;
 }
+function createTaskRow(text, done) {
+  const taskRow = document.createElement("div");
+  taskRow.classList.add("task-row");}
