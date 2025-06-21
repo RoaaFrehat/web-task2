@@ -10,3 +10,12 @@ body {
     justify-content: flex-start;
     flex-direction: column;
 }
+.task-container {
+    width: 100vw;
+    height: 93vh;
+    max-height: 97%;
+    max-width: 97%;
+    margin: 0 auto;
+    padding: 0px;
+    border-radius: 8px;
+}
