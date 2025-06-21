@@ -43,3 +43,14 @@ h1, h2 {
     border-radius: 4px;
     font-size: 16px;
 }
+.task-input-section button {
+    width: 102%;
+    padding: 15px;
+    font-size: 16px;
+    background-color: #0097a7;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
