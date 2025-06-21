@@ -117,3 +117,15 @@ editBtn.classList.add("icon-btn");
   return taskRow;
 }
 
+function saveTasksToLocalStorage() {
+  const tasks = [];
+  const taskRows = document.querySelectorAll(".task-row");
+  taskRows.forEach((taskRow) => {
+    const taskText = taskRow.querySelector("span").textContent;
+    const taskDone = taskRow.querySelector("input").checked;
+    tasks.push({ text: taskText, done: taskDone });
+  });
+  localStorage.setItem("tasks", JSON.stringify(tasks));
+}
+
+
