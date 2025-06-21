@@ -19,3 +19,10 @@ window.addEventListener("load", function () {
   updateNoTaskMessage();
   updateDeleteButtonsState();
 });
+
+addTaskBtn.addEventListener("click", function () {
+  const taskText = taskInput.value.trim();
+
+  if (!validateTaskInput(taskText)) {
+    return;
+  }
