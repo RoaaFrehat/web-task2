@@ -28,3 +28,9 @@ addTaskBtn.addEventListener("click", function () {
   }
    const taskRow = createTaskRow(taskText, false);
   tasksContainer.appendChild(taskRow);
+   saveTasksToLocalStorage();
+  taskInput.value = "";
+  errorMessage.style.display = "none";
+  updateNoTaskMessage();
+  updateDeleteButtonsState();
+});
