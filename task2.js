@@ -128,4 +128,7 @@ function saveTasksToLocalStorage() {
   localStorage.setItem("tasks", JSON.stringify(tasks));
 }
 
+function updateNoTaskMessage() {
+  if (tasksContainer.children.length === 0) {
+    let noTaskMessage = document.getElementById("noTaskMessage");
 
