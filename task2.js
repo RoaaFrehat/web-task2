@@ -43,3 +43,10 @@ function validateTaskInput(taskText) {
     showError("Task cannot start with a number!");
     return false;
   }
+  if (taskText.length < 5) {
+    showError("Task name must be at least 5 characters long!");
+    return false;
+  }
+
+  return true;
+}
