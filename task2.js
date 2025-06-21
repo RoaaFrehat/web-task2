@@ -138,4 +138,12 @@ function updateNoTaskMessage() {
       tasksContainer.appendChild(noTaskMessage);
     }
     
+} else {
+    const noTaskMessage = document.getElementById("noTaskMessage");
+    if (noTaskMessage) {
+      noTaskMessage.remove();
+    }
+  }
+}
+
 
