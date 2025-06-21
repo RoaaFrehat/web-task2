@@ -39,3 +39,7 @@ function validateTaskInput(taskText) {
     showError("Task cannot be empty!");
     return false;
   }
+  if (/^[0-9]/.test(taskText)) {
+    showError("Task cannot start with a number!");
+    return false;
+  }
