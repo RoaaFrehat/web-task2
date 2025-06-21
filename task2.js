@@ -146,4 +146,7 @@ function updateNoTaskMessage() {
   }
 }
 
-
+function updateDeleteButtonsState() {
+  if (tasksContainer.children.length === 0) {
+    deleteAllTasksBtn.disabled = true;
+    
