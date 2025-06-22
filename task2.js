@@ -158,4 +158,8 @@ function updateDeleteButtonsState() {
   }
 }
 deleteAllTasksBtn.addEventListener("click", function () {
-  if (tasksContainer.children.length === 0) {
+  if (tasksContainer.children.length === 0) { 
+    alert("No tasks to delete!");
+    return;
+  }
+
