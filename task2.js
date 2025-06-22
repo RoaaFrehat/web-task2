@@ -157,3 +157,5 @@ function updateDeleteButtonsState() {
     deleteDoneTasksBtn.disabled = false;
   }
 }
+deleteAllTasksBtn.addEventListener("click", function () {
+  if (tasksContainer.children.length === 0) {
