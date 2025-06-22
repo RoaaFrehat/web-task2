@@ -163,3 +163,9 @@ deleteAllTasksBtn.addEventListener("click", function () {
     return;
   }
 
+  tasksContainer.innerHTML = "";
+  saveTasksToLocalStorage();
+  updateNoTaskMessage();
+  updateDeleteButtonsState();
+});
+
