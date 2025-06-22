@@ -178,3 +178,10 @@ eleteDoneTasksBtn.addEventListener("click", function () {
     return;
   }
 
+   doneTasks.forEach(function (task) {
+    task.remove();
+  });
+  saveTasksToLocalStorage();
+  updateNoTaskMessage();
+  updateDeleteButtonsState();
+});
