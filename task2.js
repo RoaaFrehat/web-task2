@@ -169,3 +169,12 @@ deleteAllTasksBtn.addEventListener("click", function () {
   updateDeleteButtonsState();
 });
 
+
+eleteDoneTasksBtn.addEventListener("click", function () {
+  const doneTasks = document.querySelectorAll(".task-row.task-done");
+
+  if (doneTasks.length === 0) {
+    alert("No done tasks to delete!");
+    return;
+  }
+
