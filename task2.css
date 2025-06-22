@@ -61,3 +61,14 @@ h1, h2 {
 button:active {
     transform: translateY(5px);
 }
+
+
+.task-filters {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
