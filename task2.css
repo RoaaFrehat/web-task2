@@ -100,3 +100,12 @@ button:active {
     gap: 10px;
     text-align: left;
 }
+.task-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background: #f8f9fa;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
