@@ -109,3 +109,20 @@ button:active {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
+.task-row span {
+    flex: 1;
+    padding-left: 10px;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.icon-btn:hover {
+    color: #800707;
+}
