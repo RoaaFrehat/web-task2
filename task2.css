@@ -153,3 +153,11 @@ button:active {
 .task-actions button:active {
     transform: translateY(5px);
 }
+
+#noTaskMessage {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #777;
+    margin-top: 20px;
+}
