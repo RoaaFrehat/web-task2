@@ -170,7 +170,7 @@ deleteAllTasksBtn.addEventListener("click", function () {
 });
 
 
-eleteDoneTasksBtn.addEventListener("click", function () {
+deleteDoneTasksBtn.addEventListener("click", function () {
   const doneTasks = document.querySelectorAll(".task-row.task-done");
 
   if (doneTasks.length === 0) {
