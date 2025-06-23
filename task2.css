@@ -84,3 +84,12 @@ button:active {
     cursor: pointer;
     transition: background-color 0.3s;
 }
+
+.task-filters button:hover {
+    background-color: #007b8c;
+    transform: translateY(-5px);
+}
+
+.task-filters:active {
+    transform: translateY(5px);
+}
