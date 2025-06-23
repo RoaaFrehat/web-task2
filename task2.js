@@ -221,3 +221,7 @@ showAllBtn.addEventListener("click", function () {
   });
 });
 
+function showError(message) {
+  errorMessage.textContent = message;
+  errorMessage.style.display = "block";
+}
