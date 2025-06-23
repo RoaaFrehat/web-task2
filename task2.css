@@ -144,3 +144,12 @@ button:active {
     cursor: pointer;
     transition: background-color 0.3s;
 }
+
+.task-actions button:hover {
+    background-color: #cc5040;
+    transform: translateY(-5px);
+}
+
+.task-actions button:active {
+    transform: translateY(5px);
+}
