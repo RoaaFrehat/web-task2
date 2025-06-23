@@ -197,3 +197,10 @@ button:active {
 .confirmation-dialog .confirm-btn:hover {
     opacity: 0.8;
 }
+
+#errorMessage {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: left;
+    display: none;  }
