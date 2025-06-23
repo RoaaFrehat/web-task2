@@ -77,6 +77,7 @@ if (done) {
     }
     saveTasksToLocalStorage();
   });
+  
 const editBtn = document.createElement("button");
 editBtn.classList.add("icon-btn");
   editBtn.innerHTML = '<i class="fas fa-edit"></i>';
@@ -101,6 +102,7 @@ editBtn.classList.add("icon-btn");
   deleteBtn.innerHTML = '<i class="fas fa-trash-alt"></i>';
   deleteBtn.addEventListener("click", function () {
     const confirmDelete = confirm("Are you sure you want to delete this task?");
+
     if (confirmDelete) {
       taskRow.remove();
       saveTasksToLocalStorage();
@@ -125,6 +127,7 @@ function saveTasksToLocalStorage() {
     const taskDone = taskRow.querySelector("input").checked;
     tasks.push({ text: taskText, done: taskDone });
   });
+
   localStorage.setItem("tasks", JSON.stringify(tasks));
 }
 
@@ -132,6 +135,7 @@ function updateNoTaskMessage() {
   if (tasksContainer.children.length === 0) {
     let noTaskMessage = document.getElementById("noTaskMessage");
     if (!noTaskMessage) {
+
       noTaskMessage = document.createElement("p");
       noTaskMessage.id = "noTaskMessage";
        noTaskMessage.textContent = "No tasks";
@@ -198,3 +202,19 @@ showDoneBtn.addEventListener("click", function () {
     }
   });
 });
+
+
+
+showAllBtn.addEventListener("click", function () {
+  const tasks = document.querySelectorAll(".task-row");
+  tasks.forEach(function (task) {
+    task.style.display = "flex"; 
+  });
+
+});
+
+function showError(message) {
+  errorMessage.textContent = message;
+  errorMessage.style.display = "block";
+}
+
