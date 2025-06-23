@@ -199,18 +199,13 @@ showDoneBtn.addEventListener("click", function () {
   });
 });
 
-
-
 showTodoBtn.addEventListener("click", function () {
   const tasks = document.querySelectorAll(".task-row");
   tasks.forEach(function (task) {
     if (!task.classList.contains("task-done")) {
-      task.style.display = "flex";
-
+      task.style.display = "flex";     
     } else {
-      task.style.display = "none";  
+      task.style.display = "none";   
     }
   });
 });
-
-
