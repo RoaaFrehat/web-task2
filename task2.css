@@ -93,3 +93,10 @@ button:active {
 .task-filters:active {
     transform: translateY(5px);
 }
+
+.task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+}
