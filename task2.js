@@ -214,3 +214,10 @@ showTodoBtn.addEventListener("click", function () {
 });
 
 
+showAllBtn.addEventListener("click", function () {
+  const tasks = document.querySelectorAll(".task-row");
+  tasks.forEach(function (task) {
+    task.style.display = "flex";    
+  });
+});
+
